@@ -1,0 +1,5 @@
+project(Dehaze)
+cmake_minimum_required(VERSION 2.6)
+find_package(OpenCV REQUIRED)
+add_executable(Dehaze Dehaze.cpp)
+target_link_libraries(Dehaze ${OpenCV_LIBS})
